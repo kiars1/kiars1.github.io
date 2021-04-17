@@ -1,0 +1,6 @@
+.logo_place_footer {
+  background-image: url(../../../images/logo_place_footer.svg);
+  height: 35px;
+  width: 183.77px;
+  /*Простите пожалуйста, что увеличел значение width. Очень бесило, что логотип образается. Судя по svg файлу его width 183.77. :....( */
+}
