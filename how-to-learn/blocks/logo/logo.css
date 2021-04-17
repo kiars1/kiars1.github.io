@@ -5,3 +5,6 @@
   padding: 0px;
   margin: 0px;
 }
+
+@import url('_place/logo_place_header.css');
+@import url('_place/logo_place_footer.css');
