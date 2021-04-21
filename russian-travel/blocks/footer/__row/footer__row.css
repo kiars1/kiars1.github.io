@@ -1,0 +1,20 @@
+.footer__row {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  grid-column-gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  justify-items: start;
+  align-items: end;
+}
+
+@media screen and (max-width: 750px) {
+  .footer__row {
+    grid-template-columns: min-content;
+    grid-template-rows: repeat(5, min-content);
+    grid-row-gap: 32px;
+    margin: 0;
+    margin-left: 16px;
+  }
+}

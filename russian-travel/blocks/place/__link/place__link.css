@@ -1,0 +1,12 @@
+.place__link {
+    font-size: 1.125em;
+    color: #ffffff;
+    font-style: normal;
+    grid-column: 2;
+    transition: opacity 0.5s;
+}
+
+.place__link:hover {
+    opacity: .2;
+    transition: opacity 0.5s;
+}
