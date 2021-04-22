@@ -16,14 +16,14 @@
     }
   }
   
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .photo-grid {
       padding-top: 88px;
       max-width: 720px;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 500px) {
     .photo-grid  {
        padding-top: 64px;
        max-width: 288px;
