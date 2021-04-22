@@ -18,7 +18,7 @@
     }
   }
   
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .photo-grid {
       padding-top: 88px;
       max-width: 720px;
@@ -26,7 +26,7 @@
       grid-template-rows: repeat(auto-fit, minmax(215px, 264px));
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
     .photo-grid  {
        padding-top: 64px;
        max-width: 288px;
