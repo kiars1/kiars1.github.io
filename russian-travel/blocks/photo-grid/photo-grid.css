@@ -5,6 +5,7 @@
     display: grid;
     gap: 16px;
     grid-template-columns: 280px 1fr;
+    grid-template-rows: 213px 1fr;
 }
 
 @media screen and (max-width: 1100px) {
@@ -13,6 +14,7 @@
       max-width: 928px;
       gap: 14px;
       grid-template-columns: 290px 1fr;
+      grid-template-rows: 255px 1fr;
     }
   }
   
@@ -21,6 +23,7 @@
       padding-top: 88px;
       max-width: 720px;
       grid-template-columns: 350px 1fr;
+      grid-template-rows: 264px 1fr;
     }
 
 @media screen and (max-width: 716px) {
@@ -29,5 +32,6 @@
        max-width: 288px;
        gap: 12px;
        grid-template-columns: 280px 1fr;
+       grid-template-rows: 216px 1fr;
     }
   }
