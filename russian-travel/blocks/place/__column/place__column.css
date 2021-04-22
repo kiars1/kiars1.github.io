@@ -1,10 +1,10 @@
-.place__url-position {
+.place__column {
     align-self: end;
     margin-bottom: 48px;
 }
 
 @media screen and (max-width: 700px) {
-    .place__url-position {
+    .place__column {
      margin-bottom: 32px;
      margin-top: 32px;
     }
