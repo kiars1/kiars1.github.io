@@ -16,13 +16,15 @@
 @media screen and (max-width: 769px) {
   .places {
     padding-top: 88px;
-      max-width: 720px;
+    max-width: 720px;
+    grid-row-gap: 73px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .places {
     padding-top: 64px;
-      max-width: 288px;
+    max-width: 288px;
+    grid-row-gap: 50px;
   }
 }

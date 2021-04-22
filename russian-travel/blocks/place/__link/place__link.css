@@ -10,3 +10,10 @@
     opacity: .2;
     transition: opacity 0.5s;
 }
+
+@media screen and (max-width: 700px) {
+    .place__link {
+        grid-column: 1;
+        grid-row: 2;
+    }
+  }

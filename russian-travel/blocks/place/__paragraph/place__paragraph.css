@@ -6,3 +6,16 @@
     grid-column: 2;
     margin: 0 0 26px 0;
 }
+
+@media screen and (max-width: 800px) {
+    .place__paragraph  {
+     font-size: 1em;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .place__paragraph  {
+     font-size: 1em;
+     grid-column: 1;
+    }
+  }
