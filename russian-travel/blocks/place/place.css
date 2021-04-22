@@ -1,0 +1,12 @@
+.place {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .place {
+    max-width: 288px;
+  }
+}
+
