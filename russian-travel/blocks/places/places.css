@@ -6,25 +6,8 @@
   grid-row-gap: 80px;
 }
 
-@media screen and (max-width: 1200px) {
-  .places {
-    padding-top: 92px;
-    max-width: 928px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .places {
-    padding-top: 88px;
-    max-width: 720px;
-    grid-row-gap: 73px;
-  }
-}
-
-@media screen and (max-width: 730px) {
-  .places {
-    padding-top: 64px;
-    max-width: 288px;
-    grid-row-gap: 50px;
+@media screen and (max-width: 1100px) {
+.places {
+  max-width: 90%;
   }
 }

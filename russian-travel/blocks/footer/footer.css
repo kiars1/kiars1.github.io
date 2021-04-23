@@ -8,23 +8,24 @@
   margin: auto;
 }
 
-@media screen and (max-width: 1024px) {
-  .footer {
-    max-width: 928px;
+@media screen and (max-width: 1280px) {
+.footer {
+    max-width: 90%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .footer {
-    padding-top: 90px;
-    max-width: 720px;
+.footer {
+  padding-top: 90px;
+  max-width: 720px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .footer {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 64px;
+@media screen and (max-width: 750px) {
+.footer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 64px;
+  padding-left: 16px;
   }
 }

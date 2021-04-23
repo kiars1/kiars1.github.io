@@ -1,4 +1,9 @@
 .lead {
-    margin: auto;
-    max-width: 984px;
+  margin: auto;
+  max-width: 984px;
 }
+  
+@media screen and (max-width: 768px) {
+.header {
+  max-width: 90%;
+ }

@@ -1,17 +1,17 @@
 .lead__container {
-    margin: 64px auto auto auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 984px));
+  margin: 64px auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 984px));
 }
 
 @media screen and (max-width: 1025px) {
-    .lead__container {
-    margin: 64px auto auto auto;
-    }
+.lead__container {
+  margin: 64px auto auto auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .lead__container  {
-    margin: 40px auto auto auto;
-    }
+  .lead__container  {
+  margin: 40px auto auto auto;
+  }
 }

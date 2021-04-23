@@ -5,28 +5,21 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .place__image  {
-        max-width: 440px;
-    }
+.place__image  {
+  max-width: 100%;
   }
+}
 
-@media screen and (max-width: 800px) {
-    .place__image  {
-        max-width: 340px;
-    }
-  }
-  
-  @media screen and (max-width: 700px) {
-    .place__image  {
-        max-width: 100%;
-        grid-row: 3/5;
-    }
-  }
 
-  @media screen and (max-width: 320px) {
-    .place__image  {
-        max-width: calc(100% + 2*16px);
-        margin-left: -16px;
-        grid-row: 3/5;
-    }
+@media screen and (max-width: 658px) {
+.place__image  {
+  grid-row: 3/5;
   }
+}
+
+@media screen and (max-width: 513px) {
+.place__image  {
+  max-width: calc(100% + 2*16px);
+  margin-left: -16px;
+  }
+}

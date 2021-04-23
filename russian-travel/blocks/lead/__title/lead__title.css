@@ -2,22 +2,28 @@
   font-size: 6em;
   line-height: 1em;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   margin: 56px auto 0px auto;
   max-width: 720px;
 }
 
-@media screen and (max-width: 1025px) {
-  .lead__title {
-    margin: 48px auto 0px auto;
+@media screen and (max-width: 1024px) {
+.lead__title {
+  margin: 48px auto 0px auto;
   }
 }
 
-@media screen and (max-width: 650px) {
-    .lead__title {
-      font-size: 2.5em;
-      max-width: 288px;
-      margin: 48px auto 0px auto;
-    }
+@media screen and (max-width: 760px) {
+.lead__title {
+  font-size: 12.5vw;
+  max-width: 90%;
   }
+}
+
+@media screen and (max-width: 320px) {
+.lead__title {
+  font-size: 2.5em;
+  max-width: 90%;
+  }
+}

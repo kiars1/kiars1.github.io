@@ -9,11 +9,10 @@
 }
 
 @media screen and (max-width: 750px) {
-  .footer__menu {
-    grid-template-columns: min-content;
-    grid-template-rows: repeat(5, min-content);
-    gap: 32px;
-    margin: 0;
-    margin-left: 16px;
+.footer__menu {
+  grid-template-columns: min-content;
+  grid-template-rows: repeat(5, min-content);
+  gap: 32px;
+  margin: 0;
   }
 }

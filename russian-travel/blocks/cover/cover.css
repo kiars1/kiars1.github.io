@@ -1,5 +1,17 @@
 .cover {
-    margin: auto;
+  margin: auto;
+  padding-top: 92px;
+  max-width: 1184px;
+}
+
+@media screen and (max-width: 879px) {
+.cover {
+  padding-top: calc(92px - 26px);
+  }
+}
+
+@media screen and (max-width: 658px) {
+.cover {
     padding-top: 92px;
-    max-width: 1184px;
+  }
 }
