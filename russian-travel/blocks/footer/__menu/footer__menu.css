@@ -4,7 +4,7 @@
   margin: 0;
   gap: 18px;
   display: grid;
-  grid-template-columns: repeat(5, min-content);
+  grid-template-columns: 200px repeat(5, min-content);
   justify-items: start;
 }
 
