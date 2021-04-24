@@ -16,12 +16,14 @@
 @media screen and (max-width: 768px) {
 .place__title {
   font-size: 2.625em;
+  word-spacing: 2em;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 765px) {
 .place__title {
   font-size: 5.4vw;
+  word-spacing: normal;
   }
 }
 

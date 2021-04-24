@@ -1,6 +1,6 @@
 .place__column {
-    align-self: end;
-    margin-bottom: 48px;
+  align-self: end;
+  margin-bottom: 48px;
 }
 
 @media screen and (max-width: 658px) {
