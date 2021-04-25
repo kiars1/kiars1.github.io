@@ -4,8 +4,6 @@
   margin: auto;
   display: grid;
   gap: 16px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(213px, 1fr));
 }
