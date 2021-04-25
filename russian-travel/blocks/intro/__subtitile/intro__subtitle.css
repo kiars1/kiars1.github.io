@@ -3,12 +3,18 @@
   line-height: 163%;
   color: #FFFFFF;
   text-decoration: none;
-  width: 690px;
+  max-width: 690px;
   margin: 40px 0 33px 0;
 }
 
 @media screen and (max-width: 768px) {
 .intro__subtitle {
-  max-width: 90%;
+  width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+.intro__subtitle {
+  width: 96%;
   }
 }

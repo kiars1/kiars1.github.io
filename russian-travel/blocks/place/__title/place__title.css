@@ -23,13 +23,13 @@
 @media screen and (max-width: 765px) {
 .place__title {
   font-size: 5.4vw;
-  word-spacing: normal;
   }
 }
 
 @media screen and (max-width: 658px) {
 .place__title {
-  margin: 0 0 0 0;
+  margin: 0 0.5em 0 0.5em;
+  word-spacing: normal;
   }
 }
 

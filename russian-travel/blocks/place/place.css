@@ -4,10 +4,11 @@
   grid-column-gap: 40px;
 }
 
+
 @media screen and (max-width: 1024px) {
 .place {
   grid-column-gap: 32px;
-  grid-template-columns: 42.96875vw 1fr;
+  grid-template-columns: 42.97vw 1fr;
   }
 }
 
@@ -22,5 +23,6 @@
 .place {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, min-content);
-}
+  grid-column-gap: 0px;
+  }
 }

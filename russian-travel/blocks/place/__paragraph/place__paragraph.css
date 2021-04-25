@@ -4,15 +4,14 @@
   color: #ffffff;
   font-style: normal;
   grid-column: 2;
-  margin: 0 0 26px 0;
+  margin: 26px 0 0 0;
 }
 
-.place__paragraph:nth-child(odd) {
-  margin: 0 0 0 0;
+.place__paragraph:nth-child(even) {
+  margin: 0;
 }
 
-
-@media screen and (max-width: 1092px) {
+@media screen and (max-width: 1023px) {
 .place__paragraph  {
   font-size: 1.65vw;
   }
@@ -21,6 +20,7 @@
 @media screen and (max-width: 970px) {
 .place__paragraph  {
   font-size: 1em;
+  margin: 25px 0 0 0;
   }
 }
 
@@ -28,5 +28,11 @@
 .place__paragraph  {
   margin: 25px 0 0 0;
   grid-column: 1;
+  max-width: 90%;
+  margin: 25px auto auto auto;
+  }
+
+.place__paragraph:nth-child(even) {
+  margin: 25px auto auto auto;
   }
 }

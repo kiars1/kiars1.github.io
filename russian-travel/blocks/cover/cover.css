@@ -6,12 +6,12 @@
 
 @media screen and (max-width: 879px) {
 .cover {
-  padding-top: calc(92px - 26px);
+  padding-top: 90px;
   }
 }
 
 @media screen and (max-width: 658px) {
 .cover {
-    padding-top: 92px;
+    padding-top: 66px;
   }
 }
