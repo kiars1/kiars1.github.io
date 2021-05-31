@@ -54,16 +54,13 @@ function popupOpenEdit() {
   jobInput.value = `${profileDescription.textContent}`;
 }
 
-
 function popupOpenNew() {
   popupNew.classList.add('popup_oppened');
 }
 
-
 function popupOpenImage() {
   popupImage.classList.add('popup_oppened');
 }
-
 
 function popupClose() {
   popupEdit.classList.remove('popup_oppened');
@@ -79,32 +76,33 @@ function formSubmitHandlerEdit (evt) {
   popupClose()
 }
 
-
 function RenderItems() {
   initialCards.forEach(RenderItem);
 }
 
-function RenderItem(element){
+function RenderItem({name, link}){
   const PhotoElement = PhotoTemplate.cloneNode(true);
-  PhotoElement.querySelector('.photo__title').textContent = element.name || TitleInput.value;
-  PhotoElement.querySelector('.photo__image').src = PhotoInput.value || element.link;
-  PhotoElement.querySelector('.photo__image').alt = element.name || TitleInput.value;
+  PhotoElement.querySelector('.photo__title').textContent = name;
+  PhotoElement.querySelector('.photo__image').src = link;
+  PhotoElement.querySelector('.photo__image').alt = name;
 
   PhotoElement.querySelector('.photo__image').addEventListener('click', function() {
-  popupFigure.src = PhotoInput.value || element.link;
-  popupFigure.alt = element.name || TitleInput.value;
-  popupFigcaption.textContent = element.name || TitleInput.value;
+  popupFigure.src = link;
+  popupFigure.alt = name;
+  popupFigcaption.textContent = name;
   popupOpenImage()
 });
 
   DeletePhotoListeners(PhotoElement);
   LikePhotoListeners(PhotoElement);
-  PhotoList.appendChild(PhotoElement);
+  PhotoList.prepend(PhotoElement);
 };
 
 function formSubmitHandlerNew(evt){
   evt.preventDefault();
- RenderItem(TitleInput.value, PhotoInput.value);
+  let name = TitleInput.value;
+	let link = PhotoInput.value;
+ RenderItem({name, link});
  TitleInput.value = '';
  PhotoInput.value = '';
  popupClose()
