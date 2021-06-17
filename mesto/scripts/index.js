@@ -62,7 +62,7 @@ function openEditProfilePopup() {
   jobInput.value = profileDescription.textContent;
 
 //Да это костыль. Чтобы при повторном открытии (после полного удаления и закрытия через крестик) сразу кнопка была включена
-//и небыло сообщения об ошибке
+//и небыло сообщения об ошибке.
   const buttonElement = popupEdit.querySelector('.popup__button-save');
   buttonElement.classList.remove('popup__button-save_disable');
   buttonElement.removeAttribute('disabled');
@@ -79,10 +79,10 @@ function openEditProfilePopup() {
 //Функция открытия popup'а добавления фотокарточки
 function openAddCardPopup() {
   openPopup(popupNew);
-  titleInput.value = '';
-  photoInput.value = '';
+  formElementNew.reset();
   
-  //Да это костыль. Чтобы при повторном открытии (после удачного добавления) сразу кнопка была отключена.
+  // Да это костыль. Чтобы при повторном открытии (после удачного добавления) сразу кнопка была отключена.
+  //Буду благодарен если дадите намёк как это сделать красиво.
   const buttonElement = popupNew.querySelector('.popup__button-save');
   buttonElement.classList.add('popup__button-save_disable');
   buttonElement.setAttribute('disabled', 'disabled');
