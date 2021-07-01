@@ -1,20 +1,20 @@
 import {openPopup} from './index.js';
 
-class Card {
+export class Card {
   constructor(name, link, cardSelector) {
-      this._name = name;
-      this._link = link;
-      this._cardSelector = cardSelector;
+    this._name = name;
+    this._link = link;
+    this._cardSelector = cardSelector;
   }
   
   //Читаем template
   _getTemplate() {
-      const cardElement = document
-      .querySelector(this._cardSelector)
-      .content.querySelector('.photo__container')
-      .cloneNode(true);
+    const cardElement = document
+    .querySelector(this._cardSelector)
+    .content.querySelector('.photo__container')
+    .cloneNode(true);
   
-      return cardElement;
+    return cardElement;
   }
   
   //Репресируем Карточку
@@ -71,5 +71,3 @@ class Card {
     return this._element;
   }
 }
-
-  export { Card };
