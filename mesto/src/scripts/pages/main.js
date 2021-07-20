@@ -23,8 +23,6 @@ import {
   keyClose
 } from "../utils/constants.js";
 
-import "../../pages/index.css";
-
 const editFormValidator = new FormValidator(validationConfig, formElementEdit);
 const cardFormValidator = new FormValidator(validationConfig, formElementNew);
 const photoCardPopup = new PopupWithImage (popupImage, keyClose);
