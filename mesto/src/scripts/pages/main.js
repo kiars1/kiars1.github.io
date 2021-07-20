@@ -19,14 +19,15 @@ import {
   nameInput,
   jobInput,
   photoList,
-  validationConfig
+  validationConfig,
+  keyClose
 } from "../utils/constants.js";
 
-// import "../../pages/index.css";
+import "../../pages/index.css";
 
 const editFormValidator = new FormValidator(validationConfig, formElementEdit);
 const cardFormValidator = new FormValidator(validationConfig, formElementNew);
-const photoCardPopup = new PopupWithImage (popupImage);
+const photoCardPopup = new PopupWithImage (popupImage, keyClose);
 const user = new UserInfo (profileName, profileDescription);
 
 //Включение валидации форм
@@ -65,17 +66,21 @@ const addCardPopup = new PopupWithForm ({
 
     addCardPopup.close();
   }
-});
+}, keyClose);
 
 
 //Функция редактирования профиля пользователя
 const editProfilePopup = new PopupWithForm ({
   popupElement: popupEdit,
-  submitCallback: () => {
-      user.setUserInfo(editProfilePopup._getInputValues());
+  submitCallback: (data) => {
+    const name = data.nameProfile;
+    const job = data.jobProfile;
+
+      user.setUserInfo(name, job);
+      
       editProfilePopup.close();
   } 
-});
+}, keyClose);
 
 //Открытие/заполнение и сбрасывание валидации Edit Popup
 buttonEdit.addEventListener('click', () => {
