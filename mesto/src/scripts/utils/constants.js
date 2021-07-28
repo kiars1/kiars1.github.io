@@ -1,11 +1,17 @@
+export const profileImage = document.querySelector('.profile__image');
 export const profileName = document.querySelector('.profile__name');
 export const profileDescription = document.querySelector('.profile__description');
 
 export const buttonEdit = document.querySelector('.profile__button-edit');
 export const buttonAdd = document.querySelector('.profile__button-add');
+export const buttonAvatar = document.querySelector('.profile__button-edit-photo');
 
+
+export const popupAvatar = document.querySelector('.popup_type_avatar');
 export const popupEdit = document.querySelector('.popup_type_edit');
 export const popupNew = document.querySelector('.popup_type_new-card');
+export const popupDelete = document.querySelector('.popup_type_delete');
+export const formElementAvatar = popupAvatar.querySelector('.popup__form');
 export const formElementEdit = popupEdit.querySelector('.popup__form');
 export const formElementNew = popupNew.querySelector('.popup__form');
 
@@ -15,6 +21,8 @@ export const nameInput = document.querySelector('#nameInput');
 export const jobInput = document.querySelector('#jobInput');
 
 export const photoList = document.querySelector('.photo__list');
+
+export const saveButton = document.querySelectorAll('.popup__button-save');
 
 export const validationConfig = {
   formSelector: '.popup__form',
