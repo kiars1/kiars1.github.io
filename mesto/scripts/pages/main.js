@@ -32,8 +32,6 @@ import {
   keyClose
 } from "../utils/constants.js";
 
-import "../../pages/index.css";
-
 const api = new Api({
   baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-26/',
   headers: {
