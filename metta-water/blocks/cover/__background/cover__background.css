@@ -1,0 +1,7 @@
+.cover__background {
+    background-image: url(../../../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 840px;
+}

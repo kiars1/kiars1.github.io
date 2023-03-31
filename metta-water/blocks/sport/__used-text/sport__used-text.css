@@ -1,0 +1,7 @@
+.sport__used-text {
+    grid-row: 2/2;
+    grid-column: 1;
+    font-size: 18px;
+    z-index: 2;
+    margin: 0 auto 14px auto;
+}

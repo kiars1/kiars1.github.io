@@ -1,0 +1,22 @@
+.article__subbox {
+    display: inline-block;
+    overflow: hidden;
+    transition: scale 0.3s linear;
+    background-color: #fff;
+    max-width: 314px;
+    margin-left: 20px;
+    margin-top: -40px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+}
+
+.article__subbox:hover {
+    scale: 1.1;
+    transition: scale 0.3s linear;
+    -webkit-transition: scale 0.3s linear;
+    -moz-transition: scale 0.3s linear;
+    -ms-transition: scale 0.3s linear;
+    -o-transition: scale 0.3s linear;
+}

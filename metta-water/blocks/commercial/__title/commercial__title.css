@@ -1,0 +1,13 @@
+.commercial__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 308px;
+    margin: 119px auto 0px auto;
+}
+
+@media screen and (max-width: 340px) {
+    .commercial__title {
+        margin: 119px 10px 0px 10px;
+    }
+}

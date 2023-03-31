@@ -1,0 +1,7 @@
+.cover__image {
+    max-width: 100%;
+    max-height: 284px;
+    background-position: center;
+    background-size: cover;
+    margin: 240px auto 0 auto;
+}

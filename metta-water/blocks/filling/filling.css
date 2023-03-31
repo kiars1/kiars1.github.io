@@ -1,0 +1,5 @@
+.filling {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(186px, 1fr));
+    margin-bottom: 120px;
+}

@@ -1,0 +1,12 @@
+.sport__used {
+    margin: 95px auto 135.5px auto;
+    display: grid;
+    user-select: none;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 977px) {
+    .sport__used {
+        margin: auto auto 50px auto;
+    }
+}

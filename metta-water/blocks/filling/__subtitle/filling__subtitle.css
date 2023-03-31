@@ -1,0 +1,17 @@
+.filling__subtitle {
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 316px;
+    margin: 20px 0px 0px 0px;
+    grid-row: 3/5;
+    grid-column: 1;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1032px) {
+    .filling__subtitle {
+        grid-row: 4;
+        grid-column: 1/4;
+        margin: 10px 10px 10px 10px;
+    }
+}

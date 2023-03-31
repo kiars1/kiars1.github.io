@@ -1,0 +1,19 @@
+.social__image {
+    max-width: 100%;
+    max-height: 100%;
+    grid-row: 1;
+    transition: transform 0.5s ease;
+}
+
+.social__image:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}

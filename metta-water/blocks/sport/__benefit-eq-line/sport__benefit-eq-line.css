@@ -1,0 +1,25 @@
+.sport__benefit-eq-line {
+    width: 118.18px;
+    height: 18.54px;
+    border: 1px #14C5C4 solid;
+    margin-bottom: 10.74px;
+    transition: transform 0.3s linear;
+    -webkit-transition: transform 0.2s linear;
+    -moz-transition: transform 0.3s linear;
+    -ms-transition: transform 0.3s linear;
+    -o-transition: transform 0.3s linear;
+    transition-delay: 0.2s;
+}
+
+.sport__benefit-eq-line:hover {
+    transform: scale(1.3);
+    transition: transform 0.1s linear;
+    -webkit-transition: transform 0.1s linear;
+    -moz-transition: transform 0.1s linear;
+    -ms-transition: transform 0.1s linear;
+    -o-transition: transform 0.1s linear;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}

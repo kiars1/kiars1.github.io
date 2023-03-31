@@ -1,0 +1,10 @@
+.header__menu-button {
+    margin: 0px;
+    border: none;
+    cursor: pointer;
+    width: 48px;
+    height: 32px;
+    background-color: transparent;
+    background-image: url(../../../images/menu.svg);
+    margin: 66px 0px 0px 55px;
+}

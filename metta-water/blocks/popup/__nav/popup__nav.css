@@ -1,0 +1,9 @@
+.popup__nav {
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    position: relative;
+    background-color: #fff;
+    opacity: 1;
+    height: 100vh;
+    width: 50vw;
+}

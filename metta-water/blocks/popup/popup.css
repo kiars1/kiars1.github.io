@@ -1,0 +1,12 @@
+.popup {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    visibility: hidden;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    align-items: start;
+    justify-content: start;
+    display: flex;
+}

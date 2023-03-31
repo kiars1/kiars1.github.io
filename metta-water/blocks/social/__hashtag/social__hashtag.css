@@ -1,0 +1,9 @@
+.social__hashtag {
+    background-image: url(../../../images/hashtag.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vw - 91vw);
+    margin: auto;
+}

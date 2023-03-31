@@ -1,0 +1,8 @@
+.norris {
+    background-image: url(../../images/norris.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}

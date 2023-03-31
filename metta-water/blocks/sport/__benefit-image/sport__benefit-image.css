@@ -1,0 +1,14 @@
+.sport__benefit-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .sport__benefit-image  {
+        max-width: 85%;
+        max-height: 85%;
+    }
+}

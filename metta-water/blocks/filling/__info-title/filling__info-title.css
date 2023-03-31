@@ -1,0 +1,18 @@
+.filling__info-title {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 316px;
+    font-weight: 700;
+    margin: 95px 0px 0px 0px;
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1032px) {
+    .filling__info-title {
+        grid-row: 3;
+        grid-column: 1/4;
+        margin: 10px 10px auto 10px;
+    }
+}
