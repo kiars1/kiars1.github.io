@@ -1,15 +1,24 @@
 .page {
-
     margin: 0;
     padding: 0;
     background-color: white;
     font-family: 'Mulish', sans-serif;
+    transition: all 1s ease, color 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease, color 1s ease;
+    -ms-transition: all 1s ease, color 1s ease;
+    -o-transition: all 1s ease, color 1s ease;
 }
 
 @media (prefers-color-scheme: dark) {
     .page {
         background-color: #202124;
-    }
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+}
 }
 
 .main {
@@ -245,11 +254,11 @@
 @media (prefers-color-scheme: dark) {
     .text {
         color: #5f6368;
-        transition: font-size 1s ease, color 1s ease;
-        -webkit-transition: font-size 1s ease, color 1s ease;
-        -moz-transition: font-size 1s ease, color 1s ease;
-        -ms-transition: font-size 1s ease, color 1s ease;
-        -o-transition: font-size 1s ease, color 1s ease;
+        transition: font-size 0.5s ease, color 1s ease;
+        -webkit-transition: font-size 0.5s ease, color 1s ease;
+        -moz-transition: font-size 0.5s ease, color 1s ease;
+        -ms-transition: font-size 0.5s ease, color 1s ease;
+        -o-transition: font-size 0.5s ease, color 1s ease;
 }
 }
 
@@ -266,11 +275,11 @@
     font-weight: 200;
     line-height: clamp(10px, 0.7vw, 0.7vw);
     color: #5f6368;
-    transition: font-size 1s ease;
-    -webkit-transition: font-size 1s ease;
-    -moz-transition: font-size 1s ease;
-    -ms-transition: font-size 1s ease;
-    -o-transition: font-size 1s ease;
+    transition: font-size 0.5s ease;
+    -webkit-transition: font-size 0.5s ease;
+    -moz-transition: font-size 0.5s ease;
+    -ms-transition: font-size 0.5s ease;
+    -o-transition: font-size 0.5s ease;
 }
 
 .popup {
@@ -321,7 +330,7 @@
     border-radius: 2px;
     position: absolute;
     transform: rotate(45deg);
-    right: -8px; 
+    right: -8px;
     top: 10px;
 }
 
