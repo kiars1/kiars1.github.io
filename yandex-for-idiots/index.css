@@ -45,7 +45,9 @@
 
 .image {
     transition: all 0.2s linear;
+    min-width: 32px;
     width: 2vw;
+    min-height: 32px;
     height: 2vw;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
@@ -55,6 +57,8 @@
 
 .image:hover {
     transition: all 0.2s linear;
+    min-width: 40px;
+    min-height: 40px;
     width: 2.5vw;
     height: 2.5vw;
     -webkit-transition: all 0.2s linear;
