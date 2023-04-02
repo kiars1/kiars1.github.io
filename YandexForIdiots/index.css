@@ -12,13 +12,55 @@
 
 @media (prefers-color-scheme: dark) {
     .page {
-        background-color: #202124;
+        background-color: #161718;
         transition: all 1s ease;
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         -ms-transition: all 1s ease;
         -o-transition: all 1s ease;
 }
+}
+
+.header {
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.header:hover {
+    position: fixed;
+    top: 1.75vh;
+    left: 1.75vw;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.image {
+    transition: all 0.2s linear;
+    width: 2vw;
+    height: 2vw;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.image:hover {
+    transition: all 0.2s linear;
+    width: 2.5vw;
+    height: 2.5vw;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
 }
 
 .main {
@@ -371,4 +413,9 @@
     -ms-border-radius: 5vw;
     -o-border-radius: 5vw;
     -webkit-filter: drop-shadow(0px 0px 2vw white);
+}
+
+.link {
+    text-decoration: underline;
+    color: #5f6368;
 }
