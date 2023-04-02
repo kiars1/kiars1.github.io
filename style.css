@@ -10,6 +10,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
 }
 
 .centered-block {
@@ -20,7 +21,7 @@
   height: 95px;
   display: flex;
   max-width: 1330px;
-	min-width: 1280px;
+  min-width: 1280px;
 }
 
 .header__link {
@@ -52,8 +53,8 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 1330px;
-	min-width: 1280px;
-	margin: 40px auto;
+  min-width: 1280px;
+  margin: 40px auto;
 }
 
 .menu__link {
@@ -72,8 +73,8 @@
 }
 
 .content {
-	max-width: 1330px;
-	min-width: 1280px;
+  max-width: 1330px;
+  min-width: 1280px;
 }
 
 .content__title {
@@ -135,7 +136,7 @@
 }
 
 .project_name_music-album {
-  background-image: url(https://code.s3.yandex.net/web-code/album.png);
+  background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
 }
 
 .project_name_design-principles {
@@ -143,7 +144,7 @@
 }
 
 .project_name_slider {
-  background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
+  background-image: url(./metta.png);
 }
 
 .project_name_reactive {
@@ -152,6 +153,8 @@
 
 .project_name_how-to-study {
   background-image: url(https://code.s3.yandex.net/web-code/how-to-study.png);
+  background-position: center;
+  background-size: contain;
   order: 3;
 }
 
@@ -163,6 +166,12 @@
 .project_name_mesto {
   background-image: url(https://code.s3.yandex.net/web-code/mesto.png);
   order: 1;
+}
+
+.project_name_yfi {
+  background-image: url(./Ya.png);
+  background-position: center;
+  background-size: contain;
 }
 
 .project__overlay {
@@ -194,10 +203,10 @@
 
 .footer {
   height: 95px;
-	display: flex;
+  display: flex;
   justify-content: center;
   max-width: 1330px;
-	min-width: 1280px;
+  min-width: 1280px;
 }
 
 .footer__logo {
@@ -209,7 +218,3 @@
   background-position: center;
   align-self: center;
 }
-
-
-
-
