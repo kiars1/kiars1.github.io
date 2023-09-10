@@ -41,4 +41,4 @@
 
    [Портфолио](https://kiars1.github.io/)
    
-   <img src="./images/album.png" max-width="1000">
+   <img src="./image/album.png" max-width="1000">
