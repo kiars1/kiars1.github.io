@@ -13,3 +13,17 @@
 @import url(./work/work.css);
 @import url(./list/list.css);
 @import url(./footer/footer.css);
+
+.anim__large {
+  opacity: 1;
+  position: relative;
+  right: 0px;
+  transition: 1s ease;
+}
+
+.anim__small {
+  opacity: 1;
+  position: relative;
+  left: 0px;
+  transition: 1s ease;
+}

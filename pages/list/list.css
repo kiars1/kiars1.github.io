@@ -221,6 +221,8 @@
   border: 3px solid #00f0ff;
   animation: backBackground 1s ease forwards;
   display: grid;
+  opacity: 0;
+  transition: 1s ease;
 }
 
 .list__container::before {
@@ -251,17 +253,20 @@
 
 .list__container_large {
   grid-column: 1/3;
+  right: 100vw;
 }
 
 .list__container_medium {
   grid-column: 1/3;
   width: 45vw;
   height: calc(45vw / 16 * 9);
+  left: 100vw;
 }
 
 .list__container_small {
   width: 30vw;
   height: calc(30vw / 16 * 9);
+  left: 100vw;
 }
 
 .pascal {
