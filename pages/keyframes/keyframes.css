@@ -1,9 +1,9 @@
 @keyframes move {
   0% {
-    right: -100vw;
+    right: -120vw;
   }
   100% {
-    right: 100vw;
+    right: 300vw;
   }
 }
 

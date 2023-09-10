@@ -18,20 +18,20 @@
   white-space: nowrap;
   margin: 0px;
   padding: 0px;
-  width: 10%;
+  width: 100%;
   right: 100vw;
   user-select: none;
-  animation: move 10s linear infinite, blackFrame linear 0.2s infinite;
+  animation: move 20s linear infinite, blackFrame linear 0.2s infinite;
 }
 
 @media screen and (max-width: 1000px) {
   .weather__subtitle {
-    animation: move 8s linear infinite, blackFrame linear 0.2s infinite;
+    animation: move 12s linear infinite, blackFrame linear 0.2s infinite;
   }
 }
 
 @media screen and (max-width: 500px) {
   .weather__subtitle {
-    animation: move 5s linear infinite, blackFrame linear 0.2s infinite;
+    animation: move 8s linear infinite, blackFrame linear 0.2s infinite;
   }
 }

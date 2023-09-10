@@ -9,7 +9,6 @@ const Day = NowTimeData.getDay();
 const Data = NowTimeData.getDate();
 const Hour = NowTimeData.getHours();
 const Minutes = NowTimeData.getMinutes();
-const titleHello = document.querySelector('.hello__title');
 const copyright = document.querySelector('.footer__copyright');
 const allWindow = document.querySelectorAll('.list__container');
 const fMonth = [
@@ -28,6 +27,7 @@ const fMonth = [
 ];
 const fDay = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
 
+//анимация набору текста в заголовке
 var typedTitle = new Typed('#typedTitle', {
   strings: ['привет :D', 'это портфолио kiars1'],
   typeSpeed: 30,
@@ -39,6 +39,7 @@ var typedTitle = new Typed('#typedTitle', {
   loop: true,
 });
 
+//набор сабтайтла с задержкой
 var i = 0;
 var speedPrint = 50; /* Скорость/длительность эффекта в миллисекундах */
 var textTitle = "Хочешь увидеть проекты?"; /* Текст */
@@ -53,11 +54,13 @@ function typeWriter() {
 
 setTimeout(typeWriter, 2000);
 
+//Анимация на взаимодействие с мышкой
 VanillaTilt.init(document.querySelector(".hello__subtitle"), {
   max: 25,
   speed: 400,
 });
 
+//Появления проектов при прокрутке
 class Scroll {
   constructor(item) {
     this._item = item;
@@ -90,6 +93,7 @@ allWindow.forEach((inputElement) => {
   windows.scroll();
 });
 
+//функция запроса на сервер
 function sendPositin(metod, url) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -115,6 +119,7 @@ fetch("https://ipapi.co/json/")
   .then((d) => d.json())
   .then((d) => weatherCheck(d.city));
 
+//Запрос на API Weather чтобы узнать погоду ну и бонусом прописываем это в хедер
 function weatherCheck(city) {
   let yourCity = city;
   let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${yourCity}&appid=${API_KEY}`;
@@ -129,7 +134,7 @@ function weatherCheck(city) {
     )
 }
 
-
+//А чет криво год получаю, фот фишку
 function covertYear(Year) {
   const format = String(Year).replace('1', '20');
   copyright.textContent = `создание сайта - kiars1 - "${format}"`;
