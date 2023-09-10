@@ -130,7 +130,7 @@ function weatherCheck(city) {
     )
     .catch(
       (err) => console.log(err),
-      weather.textContent = `Здесь должна быть погода, но что-то пошло не так`
+      weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${data.name} ${err}°C`
     )
 }
 
