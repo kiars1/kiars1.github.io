@@ -61,44 +61,44 @@ var typedTitle = new Typed('#typedTitle', {
   loop: true,
 });
 
-function sendPositin(metod, url) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(metod, url);
+// function sendPositin(metod, url) {
+//   return new Promise((resolve, reject) => {
+//     const xhr = new XMLHttpRequest();
+//     xhr.open(metod, url);
 
-    xhr.responseType = "json";
+//     xhr.responseType = "json";
 
-    xhr.onload = () => {
-      if (xhr.status >= 400) {
-      } else {
-        resolve(xhr.response);
-      }
-    };
-    xhr.onerror = () => {
-      reject(xhr.response);
-    };
-    xhr.send();
-  });
-}
+//     xhr.onload = () => {
+//       if (xhr.status >= 400) {
+//       } else {
+//         resolve(xhr.response);
+//       }
+//     };
+//     xhr.onerror = () => {
+//       reject(xhr.response);
+//     };
+//     xhr.send();
+//   });
+// }
 
-//Узнаем локацию по IP
-fetch("https://ipapi.co/json/")
-  .then((d) => d.json())
-  .then((d) => weatherCheck(d.city));
+// //Узнаем локацию по IP
+// fetch("https://ipapi.co/json/")
+//   .then((d) => d.json())
+//   .then((d) => weatherCheck(d.city));
 
-function weatherCheck(city) {
-  let yourCity = city;
-  let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${yourCity}&appid=${API_KEY}`;
+// function weatherCheck(city) {
+//   let yourCity = city;
+//   let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${yourCity}&appid=${API_KEY}`;
 
-  sendPositin("GET", API_URL)
-    .then(
-      (data) => (weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${data.name} ${(data.main.temp - 273.15).toFixed(0)}°C`)
-    )
-    .catch(
-      (err) => console.log(err),
-      weather.textContent = `Здесь должна быть погода, но что-то пошло не так`
-    )
-}
+//   sendPositin("GET", API_URL)
+//     .then(
+//       (data) => (weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${data.name} ${(data.main.temp - 273.15).toFixed(0)}°C`)
+//     )
+//     .catch(
+//       (err) => console.log(err),
+//       weather.textContent = `Здесь должна быть погода, но что-то пошло не так`
+//     )
+// }
 
 // ================================================
 // На солучай Необходимость чекать по геопозиции

@@ -17,12 +17,12 @@
   background-position: bottom;
   background-size: contain;
   width: 100%;
-  height: calc(100vw / 6.4);
+  height: calc(100vw / 8.5);
   content: "";
   overflow: hidden;
   filter: drop-shadow(0px -10px 20px black);
   position: absolute;
-  top: -15vw;
+  top: -10vw;
 }
 
 .footer__list {
@@ -41,7 +41,20 @@
   margin-top: 10px;
 }
 
-.footer__image {
+.footer__image_git {
+  background-image: url(../../image/github.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: clamp(40px, 4vw, 4vw);
+  height: clamp(40px, 4vw, 4vw);
+}
+
+.footer__image_ya {
+  background-image: url(../../image/practicum.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   width: clamp(40px, 4vw, 4vw);
   height: clamp(40px, 4vw, 4vw);
 }
@@ -54,6 +67,60 @@
   margin: 0px 0px 0px 20px;
 }
 
+.footer__box:nth-child(1):hover .footer__text::after {
+  position: absolute;
+  content: "github.com/kairs1";
+  transform: translate(-39.5vw, 0vw);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  color: #e91e63;
+  animation: button-distort1 0.3s linear infinite;
+}
+
+.footer__box:nth-child(2):hover .footer__text::after {
+  position: absolute;
+  content: "Яндекс Практикум";
+  transform: translate(21vw, -1vw);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  color: #03a9f4;
+  animation: button-distort2 0.3s linear infinite;
+}
+
+.footer__box:nth-child(1):hover .footer__image_git::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../image/githubred.png);
+  width: clamp(40px, 4vw, 4vw);
+  height: clamp(40px, 4vw, 4vw);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-45vw, -1vw);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  color: #e91e63;
+  animation: button-distort1 0.3s linear infinite;
+}
+
+.footer__box:nth-child(2):hover .footer__image_ya::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../image/practicumblue.png);
+  width: clamp(40px, 4vw, 4vw);
+  height: clamp(40px, 4vw, 4vw);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(15.5vw, -2vw);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  color: #03a9f4;
+  animation: button-distort2 0.3s linear infinite;
+}
+
 .footer__copyright {
   font-size: clamp(10px, 1vw, 1vw);
   color: #fff;
@@ -62,11 +129,47 @@
   position: relative;
 }
 
+@media screen and (max-width: 750px) {
+  .footer__box:nth-child(1):hover .footer__text::after {
+    transform: translate(-32vw, 0vw);
+  }
+
+  .footer__box:nth-child(2):hover .footer__text::after {
+    transform: translate(13vw, -1vw);
+  }
+
+  .footer__box:nth-child(1):hover .footer__image_git::after {
+    transform: translate(-40vw, -1vw);
+  }
+
+  .footer__box:nth-child(2):hover .footer__image_ya::after {
+    transform: translate(5vw, -2vw);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .footer__list {
     justify-content: center;
   }
   .footer__text {
     margin: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer__box:nth-child(1):hover .footer__text::after {
+    transform: translate(-20vw, -4vw);
+  }
+
+  .footer__box:nth-child(2):hover .footer__text::after {
+    transform: translate(-19vw, 2vw);
+  }
+
+  .footer__box:nth-child(1):hover .footer__image_git::after {
+    transform: translate(-32vw, -6vw);
+  }
+
+  .footer__box:nth-child(2):hover .footer__image_ya::after {
+    transform: translate(-34vw, 0vw);
   }
 }
