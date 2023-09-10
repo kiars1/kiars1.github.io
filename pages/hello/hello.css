@@ -1,0 +1,207 @@
+.hello {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 0px 5px rgb(0, 68, 255));
+  position: relative;
+  z-index: 2;
+}
+
+.hello__contailer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 96vh;
+  margin: auto;
+  filter: drop-shadow(0px 0px 100px #f406dc);
+}
+
+.hello__title {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto auto auto 7%;
+  width: 90%;
+  overflow: hidden;
+  height: 20vw;
+  font-size: clamp(17px, 5vw, 5.5vw);
+  line-height: clamp(20px, 8vw, 8vw);
+  z-index: 0;
+  text-shadow: 5px 5px 15px black;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hello__subtitle {
+  position: absolute;
+  color: #fff;
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto 10% auto auto;
+  width: 15%;
+  padding: 350px 200px 100px 550px;
+  height: 10vw;
+  min-height: 80px;
+  font-size: clamp(20px, 3vw, 3vw);
+  line-height: clamp(20px, 3vw, 3vw);
+  z-index: 1;
+  transition: font-size 0.5s ease;
+  text-shadow: 5px 5px 5px black;
+}
+
+.hello__subtitle:hover {
+  font-size: clamp(30px, 4vw, 4vw);
+  line-height: clamp(30px, 4vw, 4vw);
+  transition: 0.5s ease;
+}
+
+.hello__button {
+  width: 75%;
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 61%;
+  margin: auto auto auto auto;
+  clip-path: polygon(
+    20% 0%,
+    100% 0,
+    100% 24%,
+    97% 40%,
+    97% 100%,
+    4% 100%,
+    0 78%,
+    0 0
+  );
+  border: none;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 10vw;
+  line-height: 10vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.hello__button:hover {
+  animation: button-color 0.3s linear;
+}
+
+.hello__button:hover .hello__text::before {
+  position: absolute;
+  content: "Вперед";
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  top: 49.5%;
+  left: 49.5%;
+  color: #e91e63;
+  animation: button-distort1 0.3s linear infinite;
+  text-transform: uppercase;
+}
+
+.hello__button:hover .hello__text::after {
+  position: absolute;
+  content: "Вперед";
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  top: 50.5%;
+  left: 50.5%;
+  color: #03a9f4;
+  animation: button-distort2 0.3s linear infinite;
+  text-transform: uppercase;
+}
+
+.hello__image {
+  width: 70vw;
+  height: 90%;
+  background-image: url(../../image/punkMan.png);
+  filter: grayscale(40%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: changePunk 8s linear infinite;
+  align-self: center;
+}
+
+.hello__layer {
+  position: absolute;
+  height: 90%;
+  width: 70vw;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  margin: 0px auto 0px auto;
+  background-image: url(../../image/punkMan.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: changePunk 5s linear infinite;
+}
+
+.hello__layer:nth-child(1) {
+  right: 5%;
+  animation: hello-glitch 2s infinite linear, changePunk 8s linear infinite;
+}
+.hello__layer:nth-child(2) {
+  left: 3%;
+  top: 3%;
+  animation: hello-glitch2 3s infinite linear, changePunk 8s linear infinite;
+}
+.hello__layer:nth-child(3) {
+  right: 5%;
+  animation: hello-glitch-flash 1s infinite linear,
+    changePunk 8s linear infinite;
+}
+
+@media screen and (min-width: 3000px) {
+  .hello__contailer {
+    filter: drop-shadow(0px 0px 250px #f406dc);
+  }
+  .hello__subtitle {
+    padding: 100px !important;
+    margin: auto 20% auto auto;
+    transition: 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hello__subtitle {
+    padding: 50px 100px 0px 100px !important;
+    margin: auto 10% auto auto;
+    transition: 0.5s ease;
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hello__subtitle {
+    margin: auto 20% auto auto;
+    transition: 0.5s ease;
+    padding: 0px !important;
+  }
+  .hello__subtitle:hover {
+    margin: auto 30% auto auto !important;
+    transition: 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hello__subtitle {
+    margin: auto 30% auto auto;
+    transition: 0.5s ease;
+  }
+  .hello__subtitle:hover {
+    margin: auto 45% auto auto !important;
+    transition: 0.5s ease;
+  }
+}

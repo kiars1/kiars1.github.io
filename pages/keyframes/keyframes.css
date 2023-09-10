@@ -1,0 +1,256 @@
+@keyframes move {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 100vw;
+  }
+}
+
+@keyframes blackFrame {
+  0% {
+    color: rgb(255, 162, 243);
+  }
+  48% {
+    color: rgb(255, 162, 243);
+  }
+  50% {
+    color: black;
+  }
+  52% {
+    color: rgb(255, 162, 243);
+  }
+  100% {
+    color: rgb(255, 162, 243);
+  }
+}
+
+@keyframes changePunk {
+  0% {
+    background-image: url(../../image/punkMan.png);
+  }
+  49% {
+    background-image: url(../../image/punkMan.png);
+  }
+  50% {
+    background-image: url(../../image/punkWoman.png);
+  }
+  99% {
+    background-image: url(../../image/punkWoman.png);
+  }
+  100% {
+    background-image: url(../../image/punkMan.png);
+  }
+}
+
+@keyframes hello-glitch {
+  0% {
+    clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+  }
+  10% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+  }
+  20% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+  }
+  30% {
+    clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+  }
+  40% {
+    clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+  }
+  50% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+  }
+  60% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+  }
+  70% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+  }
+  80% {
+    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+  }
+  90% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+  }
+  100% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+  }
+}
+@keyframes hello-glitch2 {
+  0% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+  }
+  15% {
+    clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+  }
+  25% {
+    clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+  }
+  30% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+  }
+  45% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+  }
+  50% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+  }
+  65% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+  }
+  75% {
+    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+  }
+  80% {
+    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+  }
+  95% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+  }
+  100% {
+    clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+  }
+}
+@keyframes hello-glitch-flash {
+  0% {
+    opacity: 0.2;
+  }
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes button-distort1 {
+  0% {
+    top: 49.5%;
+    left: 49.5%;
+  }
+  12.5% {
+    top: 49.5%;
+    left: 50%;
+  }
+  25% {
+    top: 49.5%;
+    left: 50.5%;
+  }
+  37.5% {
+    top: 50%;
+    left: 50.5%;
+  }
+  50% {
+    top: 50.5%;
+    left: 50.5%;
+  }
+  62.5% {
+    top: 50.5%;
+    left: 50%;
+  }
+  75% {
+    top: 50.5%;
+    left: 49.5%;
+  }
+  87.5% {
+    top: 50%;
+    left: 49.5%;
+  }
+  100% {
+    top: 49.5%;
+    left: 49.5%;
+  }
+}
+
+@keyframes button-distort2 {
+  0% {
+    top: 50.5%;
+    left: 50.5%;
+  }
+  12.5% {
+    top: 50%;
+    left: 50.5%;
+  }
+  25% {
+    top: 49.5%;
+    left: 50.5%;
+  }
+  37.5% {
+    top: 49.5%;
+    left: 50%;
+  }
+  50% {
+    top: 49.5%;
+    left: 49.5%;
+  }
+  62.5% {
+    top: 50%;
+    left: 49.5%;
+  }
+  75% {
+    top: 50.5%;
+    left: 49.5%;
+  }
+  87.5% {
+    top: 50.5%;
+    left: 50%;
+  }
+  100% {
+    top: 50.5%;
+    left: 50.5%;
+  }
+}
+
+@keyframes button-color {
+  0% {
+    background: radial-gradient(#fff 10px, #1d8dfd 1000%);
+  }
+  10% {
+    background: radial-gradient(#fff 10px, #1d8dfd 300%);
+  }
+  20% {
+    background: radial-gradient(#fff 10px, #1d8dfd 200%);
+  }
+  30% {
+    background: radial-gradient(#fff 10px, #1d8dfd 100%);
+  }
+  40% {
+    background: radial-gradient(#fff 10px, #1d8dfd 50%);
+  }
+  50% {
+    background: radial-gradient(#1d8dfd 10px, #fff 1000%);
+  }
+  60% {
+    background: radial-gradient(#1d8dfd 10px, #fff 300%);
+  }
+  70% {
+    background: radial-gradient(#1d8dfd 10px, #fff 200%);
+  }
+  80% {
+    background: radial-gradient(#1d8dfd 10px, #fff 100%);
+  }
+  90% {
+    background: radial-gradient(#1d8dfd 10px, #fff 50%);
+  }
+  100% {
+    background: radial-gradient(#1d8dfd 1px, #fff 0%);
+  }
+}
+
+@keyframes background {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 105%;
+  }
+}
+
+@keyframes backBackground {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}

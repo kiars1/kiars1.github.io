@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Портфолио</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфолио Кирилл Аршинов на Яндекс Практикуме">
-  <meta name="keywords" content="html, css, javascript">
-  <meta name="author" content="Кирилл Аршинов">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./pages/index.css" />
+  <meta name="description" content="Презентация работ kiars1">
+  <meta name="keywords" content="HTML5, CSS, JS Vanilla">
+  <meta name="author" content="kiars1">
+  <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+  <title>kiars1 портфолио</title>
 </head>
+
 <body class="page">
-  <header class="header centered-block">
-    <h1 class="centered-block"><a href="#" class="header__link" lang="en">Kirill Arshinov</a></h1>
+  <header class="header">
+    <div class="weather">
+      <p class="weather__subtitle"></p>
+    </div>
   </header>
-  <nav class="menu centered-block page__menu">
-    <a href="#practice" class="menu__link">Практика HTML, CSS и JavaScript</a>
-    <a href="#beginner" class="menu__link menu__link_active">Последние проекты обучения</a>
-    <a href="#frameworks" class="menu__link">Библиотеки JavaScript</a>
-  </nav>
-  <main class="content centered-block">
-    <section id="practice">
-      <h2 class="content__title">Практика HTML, CSS и JavaScript</h2>
-      <ul class="flex-row list">
-        <li class="project project_name_how-to-study project_width_m project_height_m">
-          <a href="./how-to-learn/" target="_blank" class="project__overlay">CSS-анимации</a>
-        </li>
-        <li class="project project_name_across-russia project_width_l project_height_m">
-          <a href="./russian-travel/" target="_blank" class="project__overlay">Адаптивная вёрстка</a>
-        </li>
-        <li class="project project_name_mesto project_width_m project_height_m">
-          <a href="./mesto/" target="_blank" class="project__overlay">Собственные проекты</a>
-        </li>
-      </ul>
-    </section>
-    <section id="beginner">
-      <h2 class="content__title">Последние проекты обучения</h2>
-      <ul class="flex-row list flex-row_space_bottom">
-        <li class="project project_name_music-album project_width_l project_height_l">
-          <a href="https://github.com/kiars1/react-mesto-api-full" target="_blank" class="project__overlay">Mesto на React с авторизацией</a>
-        </li>
-        <li class="project project_name_design-principles project_width_l project_height_l">
-          <a href="https://github.com/kiars1/movies-explorer-frontend/tree/level-3" target="_blank" class="project__overlay">Диплом</a>
-        </li>
-      </ul>
-    </section>
-    <section id="frameworks">
-      <h2 class="content__title">Собственные проекты</h2>
-      <div class="flex-row flex-row_reversed flex-row_space_bottom">
-        <div class="flex-column flex-column_reversed">
-          <div class="project project_width_l project_height_s">
-            <video class="project__video" src="https://code.s3.yandex.net/web-code/like.mp4" autoplay muted loop></video>
-          </div>
-          <ul class="flex-row list">
-            <li class="project project_name_slider project_width_m project_height_m">
-              <a href="https://kiars1.github.io/metta-water/" class="project__overlay">META</a>
-            </li>
-            <li class="project project_name_reactive project_width_m project_height_m">
-              <a href="#" class="project__overlay">React, Vue, Angular</a>
-            </li>
-          </ul>
+  <main class="main">
+    <section class="hello">
+      <div class="hello__contailer">
+        <h1 class="hello__title">
+          <div id="typedTitle"></div>
+        </h1>
+        <p class="hello__subtitle" data-tilt data-tilt-reverse="true"></p>
+        <div class="hello__image"></div>
+        <div class="hello__layers">
+          <div class="hello__layer"></div>
+          <div class="hello__layer"></div>
+          <div class="hello__layer"></div>
         </div>
-        <div class="project project_width_l project_height_xl project_name_yfi">
-          <a href="https://kiars1.github.io/yandex-for-idiots/" target="_blank" class="project__overlay">Yandex For Idiots</a>
-        </div>
+        <a href="#work" class="hello__button">
+          <p class="hello__text">Вперед</p>
+        </a>
       </div>
     </section>
+    <section class="work" id="work">
+      <div class="work__background"></div>
+      <ul class="list">
+        <li class="list__container pascal list__container_large">
+          <h1 class="list__title list__title_large">pascal vent</h1>
+          <p class="list__subtitle list__subtitle_large">сайт о компании и сбора тел. номеров</p>
+          <a class="list__link list__link_git list__link_large">GitHub</a>
+          <a class="list__link list__link_suite list__link_large">cайт</a>
+        </li>
+        <li class="list__container mesto list__container_small">
+          <h1 class="list__title list__title_small">mesto</h1>
+          <p class="list__subtitle list__subtitle_small">мето для обмена фото. реализован на <b>react</b></p>
+          <a class="list__link list__link_git list__link_small">GitHub</a>
+          <a class="list__link list__link_suite list__link_small">cайт</a>
+        </li>
+        <li class="list__container yandex list__container_small">
+          <h1 class="list__title list__title_small">how to search</h1>
+          <p class="list__subtitle list__subtitle_small">шуточный сайт. упор на адаптивной верстве.</p>
+          <a class="list__link list__link_git list__link_small">GitHub</a>
+          <a class="list__link list__link_suite list__link_small">cайт</a>
+        </li>
+        <li class="list__container diplom list__container_large">
+          <h1 class="list__title list__title_large">diploma yandex.practicum</h1>
+          <p class="list__subtitle list__subtitle_large">дипломный проект курса на яндекс практикум</p>
+          <a class="list__link list__link_git list__link_large">GitHub</a>
+          <a class="list__link list__link_suite list__link_large">cайт</a>
+        </li>
+        <li class="list__container travel list__container_small">
+          <h1 class="list__title list__title_small">russian travel</h1>
+          <p class="list__subtitle list__subtitle_small">сайт о путишевствиях. упор на адаптивной вестке</p>
+          <a class="list__link list__link_git list__link_small">GitHub</a>
+          <a class="list__link list__link_suite list__link_small">cайт</a>
+        </li>
+        <li class="list__container lern list__container_small">
+          <h1 class="list__title list__title_small">how to learn</h1>
+          <p class="list__subtitle list__subtitle_small">первый проект обучения на яндекс практикум</p>
+          <a class="list__link list__link_git list__link_small">GitHub</a>
+          <a class="list__link list__link_suite list__link_small">cайт</a>
+        </li>
+        <li class="list__container metta list__container_medium">
+          <h1 class="list__title list__title_medium">metta water</h1>
+          <p class="list__subtitle list__subtitle_medium">тестовый сайт. проверка работы с разными api</p>
+          <a class="list__link list__link_git list__link_medium">GitHub</a>
+          <a class="list__link list__link_suite list__link_medium">cайт</a>
+        </li>
+      </ul>
+    </section>
   </main>
-  <footer class="footer centered-block">
-    <div class="footer__logo"></div>
+  <footer class="footer">
+    <div class="footer__background"></div>
+    <div class="footer__container">
+      <ul class="footer__list">
+        <li>
+          <a href="https://github.com/kiars1" target="_blank" class="footer__link">
+            <img src="./image/github.png" class="footer__image">
+            <p class="footer__text">github.com/kairs1</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://practicum.yandex.ru/" target="_blank" class="footer__link">
+            <img src="./image/practicum.png" class="footer__image">
+            <p class="footer__text">Яндекс Практикум</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer__copyright"></p>
   </footer>
+  <script type="module" src="./vanilla-tilt.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,15 @@
+@import url(../font/font.css);
+@import url(../vendor/normalize.css);
+@import url(./keyframes/keyframes.css);
+
+@import url(./page/page.css);
+
+@import url(./header/header.css);
+
+@import url(./watcher/watcher.css);
+
+@import url(./main/main.css);
+@import url(./hello/hello.css);
+@import url(./work/work.css);
+@import url(./list/list.css);
+@import url(./footer/footer.css);

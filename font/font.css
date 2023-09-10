@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "VCR";
+  src: url(./BetterVCR/better-vcr.woff2) format("woff2"),
+    url(./BetterVCR/better-vcr.woff) format("woff"),
+    url(./BetterVCR/better-vcr.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Datcub";
+  src: url(./DatCub/DatcubLight.woff2) format("woff2"),
+    url(./DatCub/DatcubLight.woff) format("woff"),
+    url(./DatCub/DatcubLight.ttf) format('truetype');
+  font-style: normal;
+  font-weight: light;
+}
