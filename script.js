@@ -9,8 +9,9 @@ const Day = NowTimeData.getDay();
 const Data = NowTimeData.getDate();
 const Hour = NowTimeData.getHours();
 const Minutes = NowTimeData.getMinutes();
-const copyright = document.querySelector('.footer__copyright');
-const allWindow = document.querySelectorAll('.list__container');
+const copyright = document.querySelector(".footer__copyright");
+const allWindow = document.querySelectorAll(".list__container");
+const hello = document.querySelector(".hello");
 const fMonth = [
   "Jan",
   "Feb",
@@ -35,20 +36,20 @@ const anchors = document.querySelectorAll('a[href*="#"]');
 
 //Скрол страницы на JS
 for (let anchor of anchors) {
-  anchor.addEventListener('click', (evt) => {
+  anchor.addEventListener("click", (evt) => {
     evt.preventDefault();
-    const blockID = anchor.getAttribute('href');
+    const blockID = anchor.getAttribute("href");
 
-    document.querySelector('' + blockID).scrollIntoView({
+    document.querySelector("" + blockID).scrollIntoView({
       behavior: "smooth",
-      block: "start"
-    })
-  })
+      block: "start",
+    });
+  });
 }
 
 //анимация набору текста в заголовке
-var typedTitle = new Typed('#typedTitle', {
-  strings: ['привет :D', 'это портфолио kiars1'],
+var typedTitle = new Typed("#typedTitle", {
+  strings: ["привет :D", "это портфолио kiars1"],
   typeSpeed: 30,
   backSpeed: 0,
   backDelay: 2000,
@@ -81,38 +82,36 @@ class Scroll {
     this._item = item;
   }
   scroll() {
-      const itemOffset = this._item.offsetTop + window.innerHeight; //фикс бага. иначе у первого значение 0
-      const itemHeight = this._item.offsetHeight;
-      const animPoint = window.innerHeight - itemHeight;
-      
+    const helloHeight = hello.offsetHeight;
+    const itemOffset = this._item.offsetTop + helloHeight;
+    const itemHeight = this._item.offsetHeight;
+    const scroll = window.scrollY;
+    const vision = this._item.classList.contains("_anim");
 
-      window.addEventListener("scroll", () => {
-        const scroll = window.scrollY;
-        const vision = this._item.classList.contains('_anim');
-
-        if (scroll >= (itemOffset - animPoint) && !vision) {
-          if (this._item.classList.contains('list__container_large')) {
-            this._item.classList.add("anim__large");
-            this._item.classList.add("_anim");
-          } else {
-            this._item.classList.add("anim__small");
-            this._item.classList.add("_anim");
-          }
+    function animationScroll(item, scroll, vision) {
+      if (scroll >= itemOffset - itemHeight * 2.4 && !vision) {
+        if (item.classList.contains("list__container_large")) {
+          item.classList.add("anim__large");
+          item.classList.add("_anim");
         } else {
-          if (this._item.classList.contains('list__container_large')) {
-            this._item.classList.add("anim__large");
-            this._item.classList.add("_anim");
-          } else {
-            this._item.classList.add("anim__small");
-            this._item.classList.add("_anim");
-          }
+          item.classList.add("anim__small");
+          item.classList.add("_anim");
         }
-      });
-  };
+      }
+    }
+
+    animationScroll(this._item, scroll, vision);
+
+    window.addEventListener("scroll", () => {
+      const scroll = window.scrollY;
+      const vision = this._item.classList.contains("_anim");
+      animationScroll(this._item, scroll, vision);
+    });
+  }
 }
 
 allWindow.forEach((inputElement) => {
-  const windows = new Scroll(inputElement)
+  const windows = new Scroll(inputElement);
   windows.scroll();
 });
 
@@ -153,13 +152,13 @@ function weatherCheck(city) {
     )
     .catch(
       (err) => console.log(err),
-      weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${data.name} ${err}°C`
+      weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${err} °C`
     )
 }
 
 //А чет криво год получаю, фот фишку
 function covertYear(Year) {
-  const format = String(Year).replace('1', '20');
+  const format = String(Year).replace("1", "20");
   copyright.textContent = `создание сайта - kiars1 - "${format}"`;
 }
 
