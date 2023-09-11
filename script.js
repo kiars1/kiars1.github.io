@@ -27,6 +27,25 @@ const fMonth = [
 ];
 const fDay = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
 
+var i = 0;
+var speedPrint = 50; /* Скорость/длительность эффекта в миллисекундах */
+var textTitle = "Хочешь увидеть проекты?"; /* Текст */
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+//Скрол страницы на JS
+for (let anchor of anchors) {
+  anchor.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    const blockID = anchor.getAttribute('href');
+
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
+
 //анимация набору текста в заголовке
 var typedTitle = new Typed('#typedTitle', {
   strings: ['привет :D', 'это портфолио kiars1'],
@@ -40,10 +59,6 @@ var typedTitle = new Typed('#typedTitle', {
 });
 
 //набор сабтайтла с задержкой
-var i = 0;
-var speedPrint = 50; /* Скорость/длительность эффекта в миллисекундах */
-var textTitle = "Хочешь увидеть проекты?"; /* Текст */
-
 function typeWriter() {
   if (i < textTitle.length) {
     document.querySelector(".hello__subtitle").innerHTML += textTitle.charAt(i);
@@ -76,6 +91,14 @@ class Scroll {
         const vision = this._item.classList.contains('_anim');
 
         if (scroll >= (itemOffset - animPoint) && !vision) {
+          if (this._item.classList.contains('list__container_large')) {
+            this._item.classList.add("anim__large");
+            this._item.classList.add("_anim");
+          } else {
+            this._item.classList.add("anim__small");
+            this._item.classList.add("_anim");
+          }
+        } else {
           if (this._item.classList.contains('list__container_large')) {
             this._item.classList.add("anim__large");
             this._item.classList.add("_anim");
