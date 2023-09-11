@@ -89,13 +89,21 @@ class Scroll {
     const vision = this._item.classList.contains("_anim");
 
     function animationScroll(item, scroll, vision) {
-      if (scroll >= itemOffset - itemHeight * 2.4 && !vision) {
+      if (scroll >= itemOffset - itemHeight && !vision) {
         if (item.classList.contains("list__container_large")) {
           item.classList.add("anim__large");
           item.classList.add("_anim");
         } else {
           item.classList.add("anim__small");
           item.classList.add("_anim");
+        }
+      } else if (scroll >= itemOffset - itemHeight * 2.4 && !vision) {
+        if (item.classList.contains("list__container_small")) {
+          item.classList.add("anim__small");
+          item.classList.add("_anim");
+        } else if (item.classList.contains("list__container_medium")) {
+            item.classList.add("anim__small");
+            item.classList.add("_anim");
         }
       }
     }
@@ -115,46 +123,46 @@ allWindow.forEach((inputElement) => {
   windows.scroll();
 });
 
-//функция запроса на сервер
-function sendPositin(metod, url) {
-  return new Promise((resolve, reject) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(metod, url);
+// //функция запроса на сервер
+// function sendPositin(metod, url) {
+//   return new Promise((resolve, reject) => {
+//     const xhr = new XMLHttpRequest();
+//     xhr.open(metod, url);
 
-    xhr.responseType = "json";
+//     xhr.responseType = "json";
 
-    xhr.onload = () => {
-      if (xhr.status >= 400) {
-      } else {
-        resolve(xhr.response);
-      }
-    };
-    xhr.onerror = () => {
-      reject(xhr.response);
-    };
-    xhr.send();
-  });
-}
+//     xhr.onload = () => {
+//       if (xhr.status >= 400) {
+//       } else {
+//         resolve(xhr.response);
+//       }
+//     };
+//     xhr.onerror = () => {
+//       reject(xhr.response);
+//     };
+//     xhr.send();
+//   });
+// }
 
-//Узнаем локацию по IP
-fetch("https://ipapi.co/json/")
-  .then((d) => d.json())
-  .then((d) => weatherCheck(d.city));
+// //Узнаем локацию по IP
+// fetch("https://ipapi.co/json/")
+//   .then((d) => d.json())
+//   .then((d) => weatherCheck(d.city));
 
-//Запрос на API Weather чтобы узнать погоду ну и бонусом прописываем это в хедер
-function weatherCheck(city) {
-  let yourCity = city;
-  let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${yourCity}&appid=${API_KEY}`;
+// //Запрос на API Weather чтобы узнать погоду ну и бонусом прописываем это в хедер
+// function weatherCheck(city) {
+//   let yourCity = city;
+//   let API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${yourCity}&appid=${API_KEY}`;
 
-  sendPositin("GET", API_URL)
-    .then(
-      (data) => (weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${data.name} ${(data.main.temp - 273.15).toFixed(0)}°C`)
-    )
-    .catch(
-      (err) => console.log(err),
-      weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${err} °C`
-    )
-}
+//   sendPositin("GET", API_URL)
+//     .then(
+//       (data) => (weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes} ${data.name} ${(data.main.temp - 273.15).toFixed(0)}°C`)
+//     )
+//     .catch(
+//       (err) => console.log(err),
+//       weather.textContent = `${fDay[Day]} ${Data} ${fMonth[Month]} ${Hour}:${Minutes}`
+//     )
+// }
 
 //А чет криво год получаю, фот фишку
 function covertYear(Year) {
